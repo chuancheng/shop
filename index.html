@@ -1,0 +1,1130 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>音悦台 -- 音悦商城</title>
+	<link href="../shop/css/shop.css" rel="stylesheet" type="text/css">
+	<script src="../shop/js/jquery1.42.min.js" type="text/javascript"></script>
+	<script src="../shop/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+	<!--  <style>
+		.shop_home_wrapper {
+			padding-top: 456px;
+			/* background: url("http://s.yytcdn.com/v2/images/app/shop/shop_home_header_v2.jpg") no-repeat scroll center 41px #BC1131; */
+		}
+	</style> -->
+	
+	
+<style type="text/css">
+
+
+/*本例css*/
+.warpper{width:980px;height:600px;margin:15px auto 0 auto;}
+.menu1{padding-left:193px;}
+.menu1,.menu ul li,.menu ul li a{height:39px;line-height:39px;background:#1369C0; }
+.menu1 ul li,.menu ul li a{float:left;position:relative;}
+.menu1 ul li span.hot{display:block;width:29px;height:17px;background:url(images/hot.png) no-repeat;position:absolute;left:50px;top:-10px;}
+.menu1 ul li a{display:block;padding:0 28px 0 28px;color:#FFFFFF;font-size:14px;font-family:"Microsoft Yahei";}
+.menu1 ul li a:hover{background:#135DBC;text-decoration:none;}
+
+#nav{width:190px;position:relative;top:-41px;background:#4593FD;z-index:1;box-shadow:4px 2px 5px rgba(0, 0, 0, 0.3);}
+
+#nav .mod_cate_hd{height:40px;line-height:40px;font-size:16px;color:#FFFFFF;text-indent:7px;box-shadow:2px -1px 3px rgba(55,55,55,0.5);background-color:#4593FD;border-bottom:1px #3487F2 solid;font-family:"Microsoft Yahei";}
+#nav .mod_cate,#nav .mod_cate2{height:41px;border-top:1px #5AA1FE solid;border-bottom:1px #3487F2 solid;padding:9px 10px 10px 10px;}
+#nav .mod_cate h2,#nav .mod_cate2 h2{font-size:14px;font-weight:normal;font-family:"Microsoft Yahei";}
+#nav .mod_cate h2 a,#nav .mod_cate2 h2 a{color:#FFFFFF;padding-right:5px;}
+#nav .mod_cate a.hot_sub{background:#106AC0;font-size:12px;border-radius:9px;padding:0px 5px;margin-left:5px;}
+#nav .mod_cate_r{line-height:24px;font-style:normal;font-variant:normal;}
+#nav .mod_cate_r a{font-size:12px;color:#C2D9F8;padding-right:5px;}
+#nav .mod_cate2{background:none;}
+#nav .mod_cate2 a.yel{color:#fee602;}
+#nav .mod_subcate{display:none;width:798px;height:555px;border:2px #4594fd solid;background:#FFFFFF;box-shadow:5px 5px 10px rgba(0, 0, 0, 0.4);position:absolute;top:41px;z-index:-1;left:188px;overflow:hidden;}
+
+#nav .mod_subcate_main{width:530px;padding:0px 20px 1000px 20px;margin-bottom:-1000px;border-right:1px #ddd solid;float:left;}
+#nav .mod_subcate_line{width:100%;height:1px;clear:both;font-size:0px;margin-bottom:5px;border-top:5px #fff solid;border-bottom:1px #dadada dotted;overflow:hidden;display:block;}
+#nav .mod_subcate_main dl{padding:7px 0 7px 65px;border-bottom:1px #e5e5e5 solid;overflow:hidden;}
+#nav .mod_subcate_main dl dt{width:65px;font-size:12px;color:#1d7ad9;line-height:22px;font-style:normal;font-variant:normal;font-weight:700;margin-left:-65px;float:left;font-size-adjust:none;font-stretch:normal }
+#nav .mod_subcate_main dl dd{line-height:22px;overflow:hidden;}
+#nav .mod_subcate_main dl dd a{color:#666;font-size:12px;margin:0 5px 0 5px;float:left;display:inline;white-space:nowrap;}
+#nav .mod_subcate_main dl dd a.org{color:#ff7300;}
+#nav .mod_subcate_channel{clear:both;margin-top:15px;} 
+#nav .mod_subcate_channel .mod_btn_arrow{height:26px;line-height:26px;font-size:12px;padding:0 10px 0 10px;margin-left:5px;text-decoration:none;color:#FFFFFF;background:#2785E6;cursor:pointer;display:inline-block;}
+#nav .mod_subcate_channel .mod_btn_arrow b{font-weight:normal;float:left;}
+#nav .arrow_dot { width:0px;height:0px;overflow:hidden;font-size:0px;margin:9px 0 0 5px;border:4px transparent dashed;border-left:4px #FFFFFF solid;}
+#nav .mod_subcate_side{width:217px;padding-top:5px;padding-left:10px;padding-bottom:1000px;margin-bottom:-1000px;float:left;}
+
+
+#nav .on{padding:8px 10px 9px 8px;border-top:2px #5AA1FE solid;border-bottom:2px #3487F2 solid;margin-left:2px;background:#FFFFFF;}
+#nav .on h2 a{color:#333333;}
+#nav .on .mod_subcate{display:block !important;/* !important 强制显示，否则会闪烁*/ }
+#nav .on .mod_cate_r a{color:#666666;}
+#nav .on a.hot_sub{color:#FFFFFF;}
+
+/*品牌*/
+.mod_subcate_side_hd{height:30px;line-height:30px;padding-left:4px;color:#333333;font-size:14px;font-family:"微软雅黑", Arial;}
+.mod_subcate_side_brand{margin:5px 0 10px 4px;}
+.mod_subcate_side_brand li{border:1px #EEEEEE solid;margin:-1px 0 0 -1px;position:relative;float:left;}
+
+/*热门活动*/
+.mod_subcate_side_hotlist{margin-left:4px;}
+.mod_subcate_side_hotlist li{height:20px;font-size:12px;color:#666666;overflow:hidden;}
+.mod_subcate_side_hotlist li a{color:#666666;}
+
+/*ad*/
+.mod_subcate_gg{display:block;position:absolute;bottom:0;right:0;}
+
+
+
+
+
+/*中间*/
+#div1 ul li{ float: left;}
+.div1-li{ margin-left: 50px;}
+
+
+
+
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.banner{width:777px; height:383px; position:relative; overflow:hidden;}
+.banner-btn{ display:none;}
+.banner-btn a{ display:block; line-height:40px; position:absolute;top:120px; width:40px; height:40px;background-color: #000; opacity:0.3; filter:alpha(opacity=30) color: rgb(255, 255, 255);overflow: hidden; z-index:4;}
+.prevBtn{left:5px;}
+.nextBtn{right:5px;}
+.banner-img{ font-size:0; *word-spacing:-1px;/* IE6、7 */ letter-spacing: -3px; position:relative;}
+.banner-img li{ display:inline-block;*display:inline;*zoom:1;/* IE6、7 */ vertical-align: top; letter-spacing: normal;word-spacing: normal; font-size:12px;}
+.banner i{ background:url(http://gtms01.alicdn.com/tps/i1/T1szNBFzlmXXX8QSDI-400-340.png)  no-repeat; width: 15px;height: 23px; cursor:pointer;margin: 8px 0 0 12px; display:block;}
+.banner .nextBtn i{ background-position:-200px -24px;}
+.banner .prevBtn i{ background-position:-200px 0px;}
+
+.banner-circle{ position:absolute; left:50%; bottom: 15px;height: 13px;text-align: center;font-size: 0;border-radius: 10px; background:rgba(255,255,255,0.3); filter:alpha(opacity:30); }
+.banner-circle li{ border-radius: 10px; margin:2px; display: inline-block; display: -moz-inline-stack; vertical-align: middle;zoom: 1; }
+.banner-circle li a{ display: block;padding-top: 9px;width: 9px;height: 0;border-radius: 50%; background: #B7B7B7;overflow: hidden;}
+.banner-circle .selected a{ background:#F40; }
+
+
+
+</style>	
+<meta name="apple-itunes-app" content="app-id=767238876"/>
+</head>
+<body>
+
+<div class="topbar">
+<!-- <div class="content">
+	<h1 class="fl">
+		<a href="http://www.yinyuetai.com" class="logo" title="音悦Tai">音悦Tai - Logo</a>
+	</h1>
+	<ul class="menus fl">
+		<li class="menu hoverhandler">
+			<a href="#" class="link" title="我的家"><span class="fl">我的家</span><b class="fl"></b></a>
+			<ul class="dropdownmenu fillet">
+				<li>
+					<a href="#" class="">我的MV</a>
+				</li>
+				<li>
+					<a href="#" class="">我的悦单</a>
+				</li>
+				<li>
+					<a href="#" class="">我的日志</a>
+				</li>
+				<li>
+					<a href="#" class="">我的相册</a>
+				</li>
+				<li>
+					<a href="#" class="">我的饭团</a>
+				</li>
+				<li>
+					<a href="#" class="">我的悦友</a>
+				</li>
+				<li>
+					<a href="#" class="fillet ">我的展示页</a>
+				</li>
+			</ul>
+		</li>
+		<li class="menu">
+			<div class="border"></div>
+		</li>
+		<li class="menu">
+			<a href="#" class="link ">首页</a>
+		</li>
+		<li class="menu hoverhandler">
+			<a href="#" class="link "><span class="fl" style="*margin-top:-1px;">MV</span><b class="fl"></b></a>
+			<ul class="dropdownmenu fillet">
+				<li>
+					<a href="#" class="">推荐MV</a>
+				</li>
+				<li>
+					<a href="#" class="fillet ">全部MV</a>
+				</li>
+			</ul>
+		</li>
+		<li class="menu hoverhandler">
+			<a href="#" class="link"><span class="fl">悦单</span><b class="fl"></b></a>
+			<ul class="dropdownmenu fillet">
+				<li>
+					<a href="#" class="">推荐悦单</a>
+				</li>
+				<li>
+					<a href="#" class="">悦单达人</a>
+				</li>
+				<li>
+					<a href="#" class="fillet ">全部悦单</a>
+				</li>
+			</ul>
+		</li>
+		<li class="menu hoverhandler">
+			<a href="#" class="link "><span class="fl">V榜</span><b class="fl"></b></a>
+			<ul class="dropdownmenu fillet">
+				<li>
+					<a href="#" class="">聚焦</a>
+				</li>
+				<li>
+					<a href="#" class="fillet ">打榜动态</a>
+				</li>
+				<li>
+					<a href="#" class="fillet ">周榜top20</a>
+				</li>
+				<li>
+					<a href="#" class="fillet ">月榜top10</a>
+				</li>
+			</ul>
+		</li>
+		<li class="menu">
+			<a href="#" class="link ">饭团</a>
+		</li>
+		<li class="menu">
+			<a href="#" class="link current">商城</a>
+		</li>
+		<li class="menu">
+			<a href="#" class="link ">资讯</a>
+		</li>
+		<li class="menu hoverhandler">
+			<a href="#" class="link"><span class="fl ">应用</span><b class="fl"></b></a>
+			<ul class="dropdownmenu fillet">
+				<li>
+					<a href="#" class="">移动客户端</a>
+				</li>
+				<li>
+					<a href="#" class="">音悦TV</a>
+				</li>
+				<li>
+					<a href="#" class="">桌面客户端</a>
+				</li>
+				<li>
+					<a href="#" class="fillet " title="口袋·FAN">口袋·FAN</a>
+					
+				</li>
+			</ul>
+		</li>
+		<li class="menu hoverhandler">
+			<a href="#" class="link "><span class="fl">节目</span><b class="fl"></b></a>
+			<ul class="dropdownmenu fillet">
+				<li>
+					<a href="#" class="">自制节目</a>
+				</li>
+				<li>
+					<a href="#" class="">引进节目</a>
+				</li>
+			</ul>
+		</li>
+		
+	</ul>
+	<ul class="userinfo fr hide">
+		<li class="user fr hoverhandler">
+			<a class="link" href="#"><span class="fl"></span><b class="fl"></b></a>
+			<ul class="dropdownmenu fillet">
+				<li>
+					<a href="#" class="decoration">装扮我的家</a>
+				</li>
+				<li>
+					<a href="#">个人设置</a>
+				</li>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<li>
+					<a href="#">认证中心</a>
+				</li>
+				<li>
+					<a href="#" class="fillet">退出</a>
+				</li>
+			</ul>
+		</li>
+		<li class="notification fr hoverhandler">
+			<a href="#" class="messenger">通知</a>
+			<span class="number hide"></span>
+			<ul class="dropdownmenu fillet hide">
+			</ul>
+		</li>
+		<li class="msg_close_li">
+			<a href="javascript:void(0);" class="msg_close hide"></a>
+		</li>
+	</ul>
+	<div class="login fr">
+		<a class="loginBtn J_login" href="#">登录</a>
+		<a href="#">注册</a>
+	</div>
+	<div class="search hide fr">
+		<div class="left_park_side"></div>
+		<div class="right_park_side"></div>
+		
+	</div>
+</div> -->
+
+
+<!-- <script type="text/javascript">
+	if (!Y.isLoadByPartner) {
+		require(['modules/yinyuetai/topbar']);
+	}
+</script> -->
+</div>
+
+
+<div class="shop_home_wrapper">
+	<div class="shop_home_container">
+	<div class="warpper" style="border: 0px solid white;">
+	<div class="menu1" style="border: 0px solid yellow;">
+    	<ul>
+            <li><a href="javascript:void(0)">资讯</a><span class="hot"></span></li>
+            <li><a href="javascript:void(0)">鉴宝</a></li>
+            <li><a href="javascript:void(0)">团购</a></li>
+            <li><a href="javascript:void(0)">发现</a></li>
+            <li><a href="javascript:void(0)">低价销售</a></li>
+            <li><a href="javascript:void(0)">招聘</a><span class="hot"></span></li>
+        </ul>
+    </div>
+    <div id="nav" style="border: 0px solid black;">
+    	<div class="mod_cate_hd">全部商品分类</div>
+    	<ul class="tit">
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">纸币</a><!-- <a href="javascript:void(0)">数码</a><a class="hot_sub" href="javascript:void(0)">合约机</a> --></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">连体钞</a><a href="javascript:void(0)">纪念钞</a><!-- <a href="javascript:void(0)">数码相机</a><a href="javascript:void(0)">智能设备</a> --></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>手机通讯</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">全部手机</a><a href="javascript:void(0)">对讲机</a>
+                                <i class="mod_subcate_line"></i>
+                                <a href="javascript:void(0)">三星</a><a href="javascript:void(0)">苹果</a><a href="javascript:void(0)">华为</a><a href="javascript:void(0)">小米</a><a href="javascript:void(0)">诺基亚</a><a href="javascript:void(0)">联想</a><a href="javascript:void(0)">HTC</a><a href="javascript:void(0)">索尼</a><a href="javascript:void(0)">中兴</a><a href="javascript:void(0)">酷派</a><a href="javascript:void(0)">海尔</a><a href="javascript:void(0)">中国移动</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>运营商</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">购机送费</a><a href="javascript:void(0)" class="org">0元购机</a><a href="javascript:void(0)">3G上网卡</a><a href="javascript:void(0)">选号入网</a><a href="javascript:void(0)">充值</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>手机配件</dt>
+                            <dd>
+                            	<a href="javascript:void(0)" class="org">移动电源</a><a href="javascript:void(0)" class="org">蓝牙耳机</a><a href="javascript:void(0)">手机套/外壳</a><a href="javascript:void(0)">贴膜</a><a href="javascript:void(0)">电池</a><a href="javascript:void(0)">充电器</a><a href="javascript:void(0)">数据线</a><a href="javascript:void(0)">手机耳机/耳麦</a><a href="javascript:void(0)">车载</a><a href="javascript:void(0)">创意配件</a><a href="javascript:void(0)">其他配件</a><a href="javascript:void(0)">iPhone配件</a><a href="javascript:void(0)">TF卡</a><a href="javascript:void(0)">蓝牙音响</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>数码摄像</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">数码相机</a><a href="javascript:void(0)" class="org">微电/微单相机</a><a href="javascript:void(0)">摄像机</a><a href="javascript:void(0)">拍立得</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>单反/镜头</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">全部</a><a href="javascript:void(0)">佳能</a><a href="javascript:void(0)">尼康</a><a href="javascript:void(0)">宾得</a><a href="javascript:void(0)">更多></a>
+                                <i class="mod_subcate_line"></i>
+                                <a href="javascript:void(0)">单反镜头</a><a href="javascript:void(0)">微单镜头</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>数码摄像</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">数码相机</a><a href="javascript:void(0)" class="org">微电/微单相机</a><a href="javascript:void(0)">摄像机</a><a href="javascript:void(0)">拍立得</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>数码配件</dt>
+                            <dd>
+                            	<a href="javascript:void(0)" class="org">存储卡</a><a href="javascript:void(0)" class="org">U盘</a><a href="javascript:void(0)">相机包</a><a href="javascript:void(0)">相机电池</a><a href="javascript:void(0)">贴膜</a><a href="javascript:void(0)">滤镜</a><a href="javascript:void(0)">三脚架</a><a href="javascript:void(0)">闪光灯</a><a href="javascript:void(0)">遮光罩</a><a href="javascript:void(0)">专业配件</a><a href="javascript:void(0)">清洁用品</a><a href="javascript:void(0)">望远镜</a><a href="javascript:void(0)">移动硬盘</a><a href="javascript:void(0)" class="org">移动电源</a><a href="javascript:void(0)">读卡器</a><a href="javascript:void(0)">干电池</a><a href="javascript:void(0)">充电电池</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>苹果专区</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">iphone</a><a href="javascript:void(0)">ipad</a><a href="javascript:void(0)">Mac</a><a href="javascript:void(0)">ipod</a><a href="javascript:void(0)">iphone配件</a><a href="javascript:void(0)">ipad配件</a><a href="javascript:void(0)">功能类配件</a><a href="javascript:void(0)">苹果电脑配件</a><a href="javascript:void(0)">ipod配件</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>娱乐影音</dt>
+                            <dd>
+                            	<a href="javascript:void(0)" class="org">智能穿戴</a><a href="javascript:void(0)">MP3和MP4</a><a href="javascript:void(0)">插卡音箱</a><a href="javascript:void(0)">潮流电玩</a><a href="javascript:void(0)">数码相框</a><a href="javascript:void(0)">收音/收录机</a><a href="javascript:void(0)">高清播放器</a><a href="javascript:void(0)">耳机</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>电子教育</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">电纸书</a><a href="javascript:void(0)">录音笔</a><a href="javascript:void(0)">电子词典</a><a href="javascript:void(0)">智能学习/点读</a><a href="javascript:void(0)">幼儿教育</a>
+                            </dd>
+                        </dl>
+                    	
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/1.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/5.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/6.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/7.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/8.jpg" /></a></li>
+                        </ul>
+                       <!--  <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">华为3X独家首发</a></li>
+                            <li><a href="javascript:void(0)">青橙手机贺新春 直降400！</a></li>
+                        </ul> -->
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">硬币</a><!-- <a href="javascript:void(0)">硬件外设</a><a class="hot_sub" href="javascript:void(0)">装机宝</a> --></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">纪念币</a><a href="javascript:void(0)">金银币</a><!-- <a href="javascript:void(0)">键盘</a><a href="javascript:void(0)">平板</a> --></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>热门推荐</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">ipad air</a><a href="javascript:void(0)">mini</a><a href="javascript:void(0)">Surface</a><a href="3">移动硬盘1TB</a><a href="javascript:void(0)">无线键盘</a><a href="javascript:void(0)">游戏鼠标</a>
+                            </dd>
+                        </dl>
+                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="javascript:void(0)"><b>电脑整机频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="javascript:void(0)"><b>硬件/外设频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="javascript:void(0)"><b>电脑附件频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="javascript:void(0)"><b>音频馆</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="javascript:void(0)"><b>腾讯周边</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/9.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/10.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/11.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/12.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/13.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/14.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/15.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/16.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/17.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/18.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/19.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">神舟新春最惠 全场最高直降500！</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/00.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">邮票</a></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">生肖票</a><a href="javascript:void(0)">大版票</a><!-- <a href="javascript:void(0)">冰箱</a><a href="javascript:void(0)">洗衣机</a> --></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>电视</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">全部</a><a href="javascript:void(0)">创维</a><a class="org" href="javascript:void(0)">海信</a><a href="3">TCL</a><a href="javascript:void(0)">康佳</a><a href="javascript:void(0)">长虹</a><a class="org" href="javascript:void(0)">夏普</a><a href="javascript:void(0)">三星</a><a class="org" href="javascript:void(0)">索尼</a><a href="javascript:void(0)">乐华</a><a href="javascript:void(0)">LG</a><a href="javascript:void(0)">联想</a><a href="javascript:void(0)">熊猫</a><a href="javascript:void(0)">三洋</a><a href="javascript:void(0)">东芝</a><a class="org" href="javascript:void(0)">乐视</a><a href="javascript:void(0)">更多></a>
+                                <i class="mod_subcate_line"></i>
+                                <a href="javascript:void(0)">32英寸</a><a href="javascript:void(0)">39-40英寸</a><a href="javascript:void(0)">42-43英寸</a><a class="org" href="javascript:void(0)">46-48英寸</a><a href="javascript:void(0)">50-55英寸</a><a href="javascript:void(0)">60英寸以上</a><a href="javascript:void(0)">32英寸以下</a>
+                            </dd>
+                        </dl>
+                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="javascript:void(0)"><b>彩电影音/空调冰洗频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/20.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/21.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/22.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/23.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/24.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/25.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">TCL春节提前抢</a></li>
+                            <li><a href="javascript:void(0)">海信彩电跨年聚惠</a></li>
+                            <li><a href="javascript:void(0)">联想智能电视机马年钜惠</a></li>
+                            <li><a href="javascript:void(0)">三星喜迎新春马上有礼</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/000.jpg" /></a> 
+                    </div>
+                </div>
+            </li>
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">稀贵金属</a><a href="javascript:void(0)">金银制品</a></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">纯金</a><a href="javascript:void(0)">纯银</a><a href="javascript:void(0)">摆件</a><a href="javascript:void(0)">其他</a></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>生活小电</dt>
+                            <dd>
+                            	<a class="org" href="javascript:void(0)">空气净化器</a><a class="org" href="javascript:void(0)">取暖设备</a><a class="org" href="javascript:void(0)">电热油汀</a><a href="javascript:void(0)">快热炉</a><a href="javascript:void(0)">暖风机</a><a href="javascript:void(0)">小太阳</a>
+                            </dd>
+                        </dl>
+                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="javascript:void(0)"><b>厨卫电器频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="javascript:void(0)"><b>生活电器频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/1.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/5.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/6.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/7.0jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/8.jpg" /></a></li>
+                        </ul>
+                       <!--  <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">华为3X独家首发</a></li>
+                            <li><a href="javascript:void(0)">青橙手机贺新春 直降400！</a></li>
+                        </ul> -->
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">名家</a><a href="javascript:void(0)">书法</a><a href="javascript:void(0)">国画</a><!-- <a class="hot_sub" href="javascript:void(0)">书法</a> --></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">名家</a><a href="javascript:void(0)">书法</a><a href="javascript:void(0)">国画</a><a href="javascript:void(0)">油画</a></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>进口食品饮料</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">全部</a><a href="javascript:void(0)">饮料冲调</a>
+                            </dd>
+                        </dl>
+                    	<dl>
+                        	<dt>休闲零食</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">全部</a><a href="javascript:void(0)">传统糕饼</a><a href="javascript:void(0)">西式糕点</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/1.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/5.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/6.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/7.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/8.jpg" /></a></li>
+                        </ul>
+                        <!-- <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">华为3X独家首发</a></li>
+                            <li><a href="javascript:void(0)">青橙手机贺新春 直降400！</a></li>
+                        </ul> -->
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">红木</a><a href="javascript:void(0)">紫檀</a><a href="javascript:void(0)">金丝楠</a></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">家具</a><a href="javascript:void(0)">工艺品</a><a href="javascript:void(0)">红木</a><a href="javascript:void(0)">杂项</a></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>热门推荐</dt>
+                            <dd>
+                            	<a href="javascript:void(0)">手表</a><a href="javascript:void(0)">羽绒服</a>
+                            </dd>
+                        </dl>
+                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="javascript:void(0)"><b>家居日用频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/1.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/5.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/6.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/7.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/8.jpg" /></a></li>
+                        </ul>
+                      <!--   <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">华为3X独家首发</a></li>
+                            <li><a href="javascript:void(0)">青橙手机贺新春 直降400！</a></li>
+                        </ul> -->
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">玉器</a><a  href="javascript:void(0)">翡翠</a><a  href="javascript:void(0)">奇石</a></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">手镯</a><a href="javascript:void(0)">和田玉</a><a href="javascript:void(0)">鸡血石</a></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>汽车电子</dt>
+                            <dd>
+                            	<a class="org" href="javascript:void(0)">GPS/专用DVD导航</a><a href="javascript:void(0)">MP3 MP4</a>
+                            </dd>
+                        </dl>
+                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="javascript:void(0)"><b>汽车、保养、装饰频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/1.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/5.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/6.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/7.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/8.jpg" /></a></li>
+                        </ul>
+                      <!--   <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">华为3X独家首发</a></li>
+                            <li><a href="javascript:void(0)">青橙手机贺新春 直降400！</a></li>
+                        </ul> -->
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        	<li class="mod_cate">
+            	<h2><i class="arrow_dot fr"></i><a href="javascript:void(0)">非物质分化遗产</a></h2>
+                <p class="mod_cate_r"><a href="javascript:void(0)">紫砂壶</a><a href="javascript:void(0)">泥人张</a></p>
+                <div class="mod_subcate">
+                	<div class="mod_subcate_main">
+                    	<dl>
+                        	<dt>打印设备</dt>
+                            <dd>
+                            	<a class="org" href="javascript:void(0)">激光打印机</a><a href="javascript:void(0)">喷墨打印机</a><a href="javascript:void(0)">针式打印机</a>
+                            </dd>
+                        </dl>
+                    	<div class="mod_subcate_channel"><a class="mod_btn_arrow" href="javascript:void(0)"><b>文具周边/办公用品频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                    	<div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                        	<li><a href="javascript:void(0)"><img src="images/1.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/5.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/6.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/7.jpg" /></a></li>
+                            <li><a href="javascript:void(0)"><img src="images/8.jpg" /></a></li>
+                        </ul>
+                      <!--   <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                        	<li><a href="javascript:void(0)">华为3X独家首发</a></li>
+                            <li><a href="javascript:void(0)">青橙手机贺新春 直降400！</a></li>
+                        </ul> -->
+                        <a class="mod_subcate_gg" href="javascript:void(0)"><img src="images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="mod_cate2">
+            <h2><a href="javascript:void(0)">QQ网购</a><a class="yel" href="javascript:void(0)">彩票</a><a href="javascript:void(0)">充值</a></h2>
+            <p class="mod_cate_r"><a href="javascript:void(0)">美妆</a><a href="javascript:void(0)">旅游</a><a href="javascript:void(0)">票务</a><a class="yel" href="javascript:void(0)">腾讯周边</a></p>
+        </div> 
+        
+    </div>
+    
+   <!-- 轮换 --> 
+   <div style="border: 0px solid white; height: 380px; width: 777px;margin-top: -590px; float: right;">
+   <div align="center" style="width:777px; margin:0 auto">
+<div class="banner">
+	<div class="banner-btn">
+		<a href="javascript:;" class="prevBtn"><i></i></a>
+		<a href="javascript:;" class="nextBtn"><i></i></a>
+	</div>
+	<ul class="banner-img">
+		<li><a href="#"><img src="images/7-1.jpg" width="777px;" height="382px;"></a></li>
+		<li><a href="#"><img src="images/7-2.jpg"  width="777px;" height="382px;"></a></li>
+		<li><a href="#"><img src="images/7-3.jpg"  width="777px;" height="382px;"></a></li>
+		<li><a href="#"><img src="images/7-4.jpg"  width="777px;" height="382px;"></a></li>
+		<li><a href="#"><img src="images/7-5.jpg"  width="777px;" height="382px;"></a></li>
+		<li><a href="#"><img src="images/7-6.jpg"  width="777px;" height="382px;"></a></li>
+		<li><a href="#"><img src="images/7-7.jpg"  width="777px;" height="382px;"></a></li>
+	</ul>
+	<!-- <ul class="banner-circle"></ul> -->
+</div>
+</div>
+    	
+    </div>
+<script>
+$(function(){
+        var $banner=$('.banner');
+        var $banner_ul=$('.banner-img');
+        var $btn=$('.banner-btn');
+        var $btn_a=$btn.find('a');
+        var v_width=$banner.width();
+		//alert(v_width); 520
+        
+        var page=1;
+        
+        var timer=null;
+        var btnClass=null;
+        var page_count=$banner_ul.find('li').length;//把这个值赋给小圆点的个数
+        var banner_cir="<li class='selected' href='#'><a></a></li>";
+        for(var i=1;i<page_count;i++){
+                //动态添加小圆点
+                banner_cir+="<li><a href='#'></a></li>";
+                }
+        $('.banner-circle').append(banner_cir);//追加li
+        
+        var cirLeft=$('.banner-circle').width()*(-0.5);
+		//alert(cirLeft);-39
+		
+        $('.banner-circle').css({'marginLeft':cirLeft});
+	 
+        $banner_ul.width(page_count*v_width);
+        //alert(page_count*v_width);  3120
+        function move(obj,classname){
+			//classname  上一页  下一页
+           //手动及自动播放
+        if(!$banner_ul.is(':animated')){
+			
+			//左边
+                if(classname=='prevBtn'){
+                        if(page==1){
+							
+                                        $banner_ul.animate({left:-v_width*(page_count-1)});
+                                        page=page_count; //6
+                                        cirMove();
+                        }
+                        else{
+										
+                                        $banner_ul.animate({left:'+='+v_width},"slow");
+                                        page--;//5 4 3 2 1
+										
+                                        cirMove();
+                        }        
+                }
+				//右边
+                else{
+                        if(page==page_count){
+                                        $banner_ul.animate({left:0});
+                                        page=1;
+                                        cirMove();
+                                }
+                        else{
+                                        $banner_ul.animate({left:'-='+v_width},"slow");
+                                        page++;
+                                        cirMove();
+                                }
+                        }
+                }
+        }
+        
+        function cirMove(){
+                //检测page的值，使当前的page与selected的小圆点一致
+                $('.banner-circle li').eq(page-1).addClass('selected') .siblings().removeClass('selected');
+        }
+        
+        $banner.mouseover(function(){
+                $btn.css({'display':'block'});
+                clearInterval(timer);
+                                }).mouseout(function(){
+                $btn.css({'display':'none'});                
+                clearInterval(timer);
+                timer=setInterval(move,3000);
+                                }).trigger("mouseout");//激活自动播放
+
+        $btn_a.mouseover(function(){
+                //实现透明渐变，阻止冒泡
+                        $(this).animate({opacity:0.6},'fast');
+                        $btn.css({'display':'block'});
+                         return false;
+                }).mouseleave(function(){
+                        $(this).animate({opacity:0.3},'fast');
+                        $btn.css({'display':'none'});
+                         return false;
+                }).click(function(){
+                        //手动点击清除计时器
+                        btnClass=this.className;
+                        clearInterval(timer);
+                        timer=setInterval(move,3000);
+                        move($(this),this.className);
+                });
+                
+        $('.banner-circle li').live('click',function(){
+                        var index=$('.banner-circle li').index(this);
+                        $banner_ul.animate({left:-v_width*index},'slow');
+                        page=index+1;
+                        cirMove();
+                });
+});
+</script>
+    
+    
+    
+     <div style="border: 0px solid white; height: 150px; width: 777px;margin-top: -192px; float: right;" id="div1" >
+    		<ul>
+    			<li><a href="javascript:void(0)"><img src="images/7-8.jpg" /></a></li>
+    			<li class="div1-li"><a href="javascript:void(0)"><img src="images/7-9.jpg" /></a></li>
+    			<li class="div1-li"><a href="javascript:void(0)"><img src="images/7-8.jpg" /></a></li>
+    		</ul>	
+    	
+    </div>
+</div>
+	
+	
+<script type="text/javascript">
+$("#nav .tit").slide({
+	type:"menu",
+	titCell:".mod_cate",
+	targetCell:".mod_subcate",
+	delayTime:0,
+	triggerTime:10,
+	defaultPlay:false,
+	returnDefault:true
+});
+</script>
+	
+	
+		<div id="shop-focus" class="focus" style="margin-top: 20px;">
+			<a href="detail.html"><img width="980" height="540" src="../shop/images/top.jpg" alt="[CNBLUE]迷你5辑《Can't Stop》"/></a>
+			<div class="slide_nav J_nav" style="margin-left: -41.5px;">
+			</div>
+		</div>
+		<div class="shop_home_goods">
+			
+				<div class="shop_home_subtitle"><h3>新品上线</h3></div>
+				<ul class="shop_home_content clearfix">
+					
+						<li class="shop_home_item type2X4">
+							
+								<a href="#" target="_blank">
+									<img src="http://img0.yytcdn.com/uploads/front_page/BCF3014485F3800D35BA33F8DB981D50.jpg" title="[少女时代]迷你4辑《Mr.Mr.》"/>
+									
+								</a>
+							
+							
+						</li>
+					
+						<li class="shop_home_item type2X4">
+							
+								<a href="#" target="_blank">
+									<img src="http://img2.yytcdn.com/uploads/front_page/AE110143673299AEC255768259C3BA14.jpg" title="东方神起"/>
+									
+										<div class="shop_home_book_account">
+											截止当前<br><strong>售出<span>5822</span></strong>
+										</div>
+									
+								</a>
+							
+							
+						</li>
+					
+				</ul>
+			
+				<div class="shop_home_subtitle"><h3>独家合作</h3></div>
+				<ul class="shop_home_content clearfix">
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img4.yytcdn.com/uploads/front_page/CF91014351E22B1A19991F9194A10B4C.JPG" title="大H合作"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img0.yytcdn.com/uploads/front_page/CD0E0144495639E4B551EA92A5F76753.jpg" title="[金在中]Repackage专辑《WWW卸妆》[CD+DVD]全款"/>
+									
+										<div class="shop_home_book_account">
+											截止当前<br><strong>售出<span>129</span></strong>
+										</div>
+									
+								</a>
+								
+									<a class="image-bottom" href="#" target="_blank">
+										<img src="http://img4.yytcdn.com/uploads/front_page/33B4014448EBAC5326F95C070FE6F23D.jpg" title="[CNBLUE]迷你5辑《Can't Stop》 预定金"/>
+									</a>
+								
+							
+						</li>
+					
+				</ul>
+			
+				<div class="shop_home_subtitle"><h3>官方授权产品</h3></div>
+				<ul class="shop_home_content clearfix">
+					
+						<li class="shop_home_item type1X2">
+							
+								<a href="#" target="_blank">
+									<img src="http://img0.yytcdn.com/uploads/front_page/FD8B0143AE1052D8B6BF5607360592CF.JPG" title="bigbang2014年历周边"/>
+									
+								</a>
+								
+						</li>
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img2.yytcdn.com/uploads/front_page/417D01442E4CA66032CA6E6B0AC82C08.jpg" title="BAP2014最新专辑"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img2.yytcdn.com/uploads/front_page/244501443F28F611AC3E7923CAAB6173.JPG" title="金在中SOLO专辑《WWW :: Who, When, Why》"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img3.yytcdn.com/uploads/front_page/F28A0143ADF13AF2725F6941DD52AA6C.JPG" title="东方神起出道曲《HUG》"/>
+									
+										<div class="shop_home_book_account">
+											截止当前<br><strong>售出<span>624</span></strong>
+										</div>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img1.yytcdn.com/uploads/front_page/AF130143ADF16CDEA1F44F67A8E19A58.JPG" title=""/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img3.yytcdn.com/uploads/front_page/1B6201430A38B6BB5642410A3317DB77.jpg" title="[龙俊亨]Solo迷你一辑《FLOWER》"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img1.yytcdn.com/uploads/front_page/47F7014366C96F7634EC5AB8077B4DF6.jpg" title="Gary出道首张SOLO迷你专辑"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img0.yytcdn.com/uploads/front_page/53A9014366C948E2C143CD0ECEAF8E8D.jpg" title="BAP新专辑预告"/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X2">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img2.yytcdn.com/uploads/front_page/207101432E0E0CEE8AF66AB0BC766E8E.JPG" title="[金俊秀]特别专辑《十二月》【补款/全款】"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img0.yytcdn.com/uploads/front_page/A5A101447231204DCD3A4C3EC58AF031.jpg" title="泫雅(4Minute)官方周边 抱枕"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img1.yytcdn.com/uploads/front_page/9E140144722D1B78AC0BFB8A0A16ADBE.jpg" title=""/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type05X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img4.yytcdn.com/uploads/front_page/86D301447225ED47FF770A30EFFF02D4.jpg" title="Beast 第二代官方应援毛巾"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="http://shop.yinyuetai.com/detail/109" target="_blank">
+										<img src="http://img2.yytcdn.com/uploads/front_page/C5F701430A3A0BE512EEE84766F9A783.jpg" title="Beast官方周边 防尘塞"/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img4.yytcdn.com/uploads/front_page/C42601447345170DCD84AB4562884466.jpg" title="Beast官方应援棒 玫瑰灯"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img4.yytcdn.com/uploads/front_page/DC4601447345FBDFDBC8139CE3D06067.jpg" title="Beast 2013 BEAUTIFUL SHOW官方周边"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img4.yytcdn.com/uploads/front_page/E6070144722629F413D7BDA56004E279.jpg" title=""/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img2.yytcdn.com/uploads/front_page/706E01430EB4607984F7939731DF6BB7.jpg" title="Beast 2013 Fan Meeting-I'm B2UTY铝制徽章套装"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img4.yytcdn.com/uploads/front_page/A06F01447346EB4F983EC5630F69DA8C.jpg" title="Beast官方周边 笔记本套装"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img3.yytcdn.com/uploads/front_page/05480144722665A091DFD4C23C895B78.jpg" title=""/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img2.yytcdn.com/uploads/front_page/4B8001430EB5EDC3150F29F3F4DB22FA.jpg" title="BEAST 2013 BEAUTIFUL SHOW官方周边 贴纸套装"/>
+									
+								</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img1.yytcdn.com/uploads/front_page/9412014473476A58CD3D7F95705CC058.jpg" title="BEAST-Midnight Sun 卡贴套装"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img3.yytcdn.com/uploads/front_page/6405014472269CF72BC3B552F9B25C01.jpg" title=""/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img4.yytcdn.com/uploads/front_page/9CB001447347F623CAC20BB814B98AB8.jpg" title="泫雅官方周边 照片套装(5枚入)"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img1.yytcdn.com/uploads/front_page/6ACD01447226E43B54AC7CFD397D7E77.jpg" title=""/>
+									</a>
+								
+							
+						</li>
+					
+						<li class="shop_home_item type1X1">
+							
+							
+								<a href="#" target="_blank">
+									<img src="http://img0.yytcdn.com/uploads/front_page/4ECC014473481623541D3D35412BC42A.jpg" title="BTOB官方应援灯"/>
+									
+								</a>
+								
+									<a class="image-bottom" href="" target="_blank">
+										<img src="http://img4.yytcdn.com/uploads/front_page/F647014472271841AE315408ED2A67CC.jpg" title=""/>
+									</a>
+								
+							
+						</li>
+					
+				</ul>
+			
+		</div>
+	</div>
+</div>
+<div class="shop_home_footer">
+<!-- Strat Footer-->
+<div class="footer">
+	<p class="footer_link">
+		<a href="#" target="_blank" title="关于音悦台">关于音悦台</a>
+		<span class="ico_line"></span>
+		<a href="#" target="_blank" title="人才招聘">人才招聘</a>
+		<span class="ico_line"></span>
+		<a href="#" target="_blank" title="联系我们">联系我们</a>
+		<span class="ico_line"></span>
+		<a href="#" target="_blank" title="友情链接">友情链接</a>
+		<span class="ico_line"></span>
+		<a href="#" target="_blank" title="版权声明">版权声明</a>
+		<span class="ico_line"></span>
+		<a href="#" target="_blank" title="客服中心">客服中心</a>
+	</p>
+
+	
+</div>
+<!-- End Footer -->
+</div>
+<!-- <script type="text/javascript">
+	require(['app/shop/shop']);
+</script>
+ -->
+
+</body>
+</html>
